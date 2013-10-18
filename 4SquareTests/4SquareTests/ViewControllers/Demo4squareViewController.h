@@ -10,9 +10,12 @@
 #import "AFNetworking.h"
 #import "Global.h"
 #import "FoursquareSpecial.h"
+#import "Demo4SquareCell.h"
 
-@interface Demo4squareViewController : UIViewController
+@interface Demo4squareViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *specials;
 @property (nonatomic) int specialsCount;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @end

@@ -42,6 +42,7 @@
 
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
         NSDictionary *response = [[operation.responseObject valueForKey:@"response"] valueForKey:@"specials"];
         self.specialsCount = [[response valueForKey:@"count"] integerValue];
         
@@ -49,6 +50,10 @@
         for (NSDictionary *dic in items) {
             [self.specials addObject:[[FoursquareSpecial alloc] initWithDictionary:dic]];
         }
+        
+        [self.tableView reloadData];
+        
+        NSLog(@"loaded: %d", self.specialsCount);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Failed");
@@ -65,6 +70,35 @@
     [dateFormat setDateFormat:@"YYYYMMdd"];
     
     return [dateFormat stringFromDate:date];
+}
+
+
+#pragma ###################################################################################################################
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.specials count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *cellIdentifier = @"CellSpecial";
+    
+    Demo4SquareCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (!cell) {
+        cell = [[Demo4SquareCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+    }
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    FoursquareSpecial *special = [self.specials objectAtIndex:[indexPath row]];
+    UILabel *nameLabel = (UILabel *) [self.view viewWithTag:101];
+    nameLabel.text = special.title;
 }
 
 @end
