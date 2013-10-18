@@ -17,4 +17,6 @@
 @property (nonatomic, strong) Contact *contact;
 @property (nonatomic, strong) Location *location;
 
+- (id)initWithDictionary: (NSDictionary *)dic;
+
 @end

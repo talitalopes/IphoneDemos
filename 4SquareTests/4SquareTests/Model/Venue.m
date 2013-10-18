@@ -10,4 +10,17 @@
 
 @implementation Venue
 
+- (id)initWithDictionary: (NSDictionary *)dic {
+    self = [super init];
+    
+    if (self) {
+        self.venueId = [dic valueForKey:@"id"];
+        self.name = [dic valueForKey:@"name"];
+        self.contact = [[Contact alloc] initWithDictionary:[dic valueForKey:@"contact"]];
+        self.location = [[Location alloc] initWithDictionary:[dic valueForKey:@"location"]];
+    }
+    
+    return self;
+}
+
 @end

@@ -10,4 +10,15 @@
 
 @implementation SpecialCategory
 
+- (id)initWithDictionary: (NSDictionary *)dic {
+    self = [super init];
+    
+    if (self) {
+        self.categoryId = [dic valueForKey:@"id"];
+        self.name = [dic valueForKey:@"name"];
+    }
+    
+    return self;
+}
+
 @end

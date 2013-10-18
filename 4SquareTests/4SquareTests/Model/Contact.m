@@ -10,4 +10,15 @@
 
 @implementation Contact
 
+- (id)initWithDictionary: (NSDictionary *)dic {
+    self = [super init];
+    
+    if (self) {
+        self.formattedPhone = [dic valueForKey:@"formattedPhone"];
+        self.twitter = [dic valueForKey:@"twitter"];
+    }
+    
+    return self;
+}
+
 @end

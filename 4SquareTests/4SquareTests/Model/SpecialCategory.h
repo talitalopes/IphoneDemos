@@ -13,4 +13,6 @@
 @property (nonatomic, strong) NSString *categoryId;
 @property (nonatomic, strong) NSString *name;
 
+- (id)initWithDictionary: (NSDictionary *)dic;
+
 @end

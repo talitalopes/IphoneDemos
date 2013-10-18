@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "AFNetworking.h"
 #import "Global.h"
+#import "FoursquareSpecial.h"
 
 @interface Demo4squareViewController : UIViewController
 
+@property (nonatomic, strong) NSMutableArray *specials;
+@property (nonatomic) int specialsCount;
 @end

@@ -18,4 +18,6 @@
 @property (nonatomic, strong) NSString *state;
 @property (nonatomic, strong) NSString *country;
 
+- (id)initWithDictionary: (NSDictionary *)dic;
+
 @end

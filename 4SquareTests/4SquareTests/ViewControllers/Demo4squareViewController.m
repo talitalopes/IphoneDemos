@@ -18,6 +18,8 @@
 {
     [super viewDidLoad];
 
+    self.specials = [[NSMutableArray alloc] init];
+    
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC);
     dispatch_after(popTime, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [self loadSpecials];
@@ -40,7 +42,13 @@
 
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"%@", operation.responseString);
+        NSDictionary *response = [[operation.responseObject valueForKey:@"response"] valueForKey:@"specials"];
+        self.specialsCount = [[response valueForKey:@"count"] integerValue];
+        
+        NSArray *items = [response valueForKey:@"items"];
+        for (NSDictionary *dic in items) {
+            [self.specials addObject:[[FoursquareSpecial alloc] initWithDictionary:dic]];
+        }
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Failed");

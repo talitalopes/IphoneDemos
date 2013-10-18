@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Venue.h"
 
 @interface FoursquareSpecial : NSObject
 
@@ -17,5 +18,8 @@
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *provider;
 @property (nonatomic, strong) NSString *redemption;
+@property (nonatomic, strong) Venue *venue;
+
+- (id)initWithDictionary: (NSDictionary *)dic;
 
 @end

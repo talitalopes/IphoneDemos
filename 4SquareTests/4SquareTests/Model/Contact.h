@@ -13,4 +13,6 @@
 @property (nonatomic, strong) NSString *formattedPhone;
 @property (nonatomic, strong) NSString *twitter;
 
+- (id)initWithDictionary: (NSDictionary *)dic;
+
 @end
