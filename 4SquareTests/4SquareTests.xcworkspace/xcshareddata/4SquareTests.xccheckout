@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>349122A0-31E6-44AE-9727-212AEE489FEC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>4SquareTests</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>75E719F8-20D3-4CB6-96FC-C900F7192DF6</key>
+		<string>https://github.com/talitalopes/IphoneDemos.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>4SquareTests/4SquareTests.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>75E719F8-20D3-4CB6-96FC-C900F7192DF6</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/talitalopes/IphoneDemos.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>75E719F8-20D3-4CB6-96FC-C900F7192DF6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>75E719F8-20D3-4CB6-96FC-C900F7192DF6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IphoneDemos</string>
+		</dict>
+	</array>
+</dict>
+</plist>
