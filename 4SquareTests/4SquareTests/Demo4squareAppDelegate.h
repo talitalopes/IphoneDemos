@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface my_demos_4squareAppDelegate : UIResponder <UIApplicationDelegate>
+@interface Demo4squareAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

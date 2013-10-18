@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "my_demos_4squareAppDelegate.h"
+#import "Demo4squareAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([my_demos_4squareAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([Demo4squareAppDelegate class]));
     }
 }

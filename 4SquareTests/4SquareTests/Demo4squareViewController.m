@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Talita Gomes. All rights reserved.
 //
 
-#import "my_demos_4squareViewController.h"
+#import "Demo4squareViewController.h"
 
-@interface my_demos_4squareViewController ()
+@interface Demo4squareViewController ()
 
 @end
 
-@implementation my_demos_4squareViewController
+@implementation Demo4squareViewController
 
 - (void)viewDidLoad
 {

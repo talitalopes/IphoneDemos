@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface my_demos_4squareViewController : UIViewController
+@interface Demo4squareViewController : UIViewController
 
 @end

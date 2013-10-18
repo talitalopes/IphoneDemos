@@ -13,9 +13,9 @@
 		7F450A621810C9C50018B7C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F450A611810C9C50018B7C5 /* UIKit.framework */; };
 		7F450A681810C9C50018B7C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F450A661810C9C50018B7C5 /* InfoPlist.strings */; };
 		7F450A6A1810C9C50018B7C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F450A691810C9C50018B7C5 /* main.m */; };
-		7F450A6E1810C9C50018B7C5 /* my_demos_4squareAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F450A6D1810C9C50018B7C5 /* my_demos_4squareAppDelegate.m */; };
+		7F450A6E1810C9C50018B7C5 /* Demo4squareAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F450A6D1810C9C50018B7C5 /* Demo4squareAppDelegate.m */; };
 		7F450A711810C9C50018B7C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F450A6F1810C9C50018B7C5 /* Main.storyboard */; };
-		7F450A741810C9C50018B7C5 /* my_demos_4squareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F450A731810C9C50018B7C5 /* my_demos_4squareViewController.m */; };
+		7F450A741810C9C50018B7C5 /* Demo4squareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F450A731810C9C50018B7C5 /* Demo4squareViewController.m */; };
 		7F450A761810C9C50018B7C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F450A751810C9C50018B7C5 /* Images.xcassets */; };
 		7F450A7D1810C9C50018B7C5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F450A7C1810C9C50018B7C5 /* XCTest.framework */; };
 		7F450A7E1810C9C50018B7C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F450A5D1810C9C50018B7C5 /* Foundation.framework */; };
@@ -46,11 +46,11 @@
 		7F450A671810C9C50018B7C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7F450A691810C9C50018B7C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7F450A6B1810C9C50018B7C5 /* 4SquareTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "4SquareTests-Prefix.pch"; sourceTree = "<group>"; };
-		7F450A6C1810C9C50018B7C5 /* my_demos_4squareAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_demos_4squareAppDelegate.h; sourceTree = "<group>"; };
-		7F450A6D1810C9C50018B7C5 /* my_demos_4squareAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = my_demos_4squareAppDelegate.m; sourceTree = "<group>"; };
+		7F450A6C1810C9C50018B7C5 /* Demo4squareAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo4squareAppDelegate.h; sourceTree = "<group>"; };
+		7F450A6D1810C9C50018B7C5 /* Demo4squareAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo4squareAppDelegate.m; sourceTree = "<group>"; };
 		7F450A701810C9C50018B7C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7F450A721810C9C50018B7C5 /* my_demos_4squareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_demos_4squareViewController.h; sourceTree = "<group>"; };
-		7F450A731810C9C50018B7C5 /* my_demos_4squareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = my_demos_4squareViewController.m; sourceTree = "<group>"; };
+		7F450A721810C9C50018B7C5 /* Demo4squareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo4squareViewController.h; sourceTree = "<group>"; };
+		7F450A731810C9C50018B7C5 /* Demo4squareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo4squareViewController.m; sourceTree = "<group>"; };
 		7F450A751810C9C50018B7C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7F450A7B1810C9C50018B7C5 /* 4SquareTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 4SquareTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F450A7C1810C9C50018B7C5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -121,11 +121,11 @@
 		7F450A631810C9C50018B7C5 /* 4SquareTests */ = {
 			isa = PBXGroup;
 			children = (
-				7F450A6C1810C9C50018B7C5 /* my_demos_4squareAppDelegate.h */,
-				7F450A6D1810C9C50018B7C5 /* my_demos_4squareAppDelegate.m */,
+				7F450A6C1810C9C50018B7C5 /* Demo4squareAppDelegate.h */,
+				7F450A6D1810C9C50018B7C5 /* Demo4squareAppDelegate.m */,
 				7F450A6F1810C9C50018B7C5 /* Main.storyboard */,
-				7F450A721810C9C50018B7C5 /* my_demos_4squareViewController.h */,
-				7F450A731810C9C50018B7C5 /* my_demos_4squareViewController.m */,
+				7F450A721810C9C50018B7C5 /* Demo4squareViewController.h */,
+				7F450A731810C9C50018B7C5 /* Demo4squareViewController.m */,
 				7F450A751810C9C50018B7C5 /* Images.xcassets */,
 				7F450A641810C9C50018B7C5 /* Supporting Files */,
 			);
@@ -296,8 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F450A6A1810C9C50018B7C5 /* main.m in Sources */,
-				7F450A741810C9C50018B7C5 /* my_demos_4squareViewController.m in Sources */,
-				7F450A6E1810C9C50018B7C5 /* my_demos_4squareAppDelegate.m in Sources */,
+				7F450A741810C9C50018B7C5 /* Demo4squareViewController.m in Sources */,
+				7F450A6E1810C9C50018B7C5 /* Demo4squareAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

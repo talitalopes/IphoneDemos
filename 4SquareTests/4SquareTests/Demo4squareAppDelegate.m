@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Talita Gomes. All rights reserved.
 //
 
-#import "my_demos_4squareAppDelegate.h"
+#import "Demo4squareAppDelegate.h"
 
-@implementation my_demos_4squareAppDelegate
+@implementation Demo4squareAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
