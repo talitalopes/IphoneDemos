@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C599D4948124B2788D5FBFA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3126D61BBA4E4F0CA49B14CE /* libPods.a */; };
+		7F32F92C1810CECB00B7FF5B /* Demo4squareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32F92B1810CECB00B7FF5B /* Demo4squareViewController.m */; };
+		7F32F9301810CF1300B7FF5B /* Demo4SquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32F92F1810CF1300B7FF5B /* Demo4SquareCell.m */; };
 		7F450A5E1810C9C50018B7C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F450A5D1810C9C50018B7C5 /* Foundation.framework */; };
 		7F450A601810C9C50018B7C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F450A5F1810C9C50018B7C5 /* CoreGraphics.framework */; };
 		7F450A621810C9C50018B7C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F450A611810C9C50018B7C5 /* UIKit.framework */; };
@@ -15,7 +17,6 @@
 		7F450A6A1810C9C50018B7C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F450A691810C9C50018B7C5 /* main.m */; };
 		7F450A6E1810C9C50018B7C5 /* Demo4squareAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F450A6D1810C9C50018B7C5 /* Demo4squareAppDelegate.m */; };
 		7F450A711810C9C50018B7C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F450A6F1810C9C50018B7C5 /* Main.storyboard */; };
-		7F450A741810C9C50018B7C5 /* Demo4squareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F450A731810C9C50018B7C5 /* Demo4squareViewController.m */; };
 		7F450A761810C9C50018B7C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F450A751810C9C50018B7C5 /* Images.xcassets */; };
 		7F450A7D1810C9C50018B7C5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F450A7C1810C9C50018B7C5 /* XCTest.framework */; };
 		7F450A7E1810C9C50018B7C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F450A5D1810C9C50018B7C5 /* Foundation.framework */; };
@@ -38,6 +39,10 @@
 /* Begin PBXFileReference section */
 		2979505A36924805B311833D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		3126D61BBA4E4F0CA49B14CE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F32F92A1810CECB00B7FF5B /* Demo4squareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4squareViewController.h; sourceTree = "<group>"; };
+		7F32F92B1810CECB00B7FF5B /* Demo4squareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4squareViewController.m; sourceTree = "<group>"; };
+		7F32F92E1810CF1300B7FF5B /* Demo4SquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4SquareCell.h; sourceTree = "<group>"; };
+		7F32F92F1810CF1300B7FF5B /* Demo4SquareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4SquareCell.m; sourceTree = "<group>"; };
 		7F450A5A1810C9C50018B7C5 /* 4SquareTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 4SquareTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F450A5D1810C9C50018B7C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7F450A5F1810C9C50018B7C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,8 +54,6 @@
 		7F450A6C1810C9C50018B7C5 /* Demo4squareAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo4squareAppDelegate.h; sourceTree = "<group>"; };
 		7F450A6D1810C9C50018B7C5 /* Demo4squareAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo4squareAppDelegate.m; sourceTree = "<group>"; };
 		7F450A701810C9C50018B7C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7F450A721810C9C50018B7C5 /* Demo4squareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo4squareViewController.h; sourceTree = "<group>"; };
-		7F450A731810C9C50018B7C5 /* Demo4squareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo4squareViewController.m; sourceTree = "<group>"; };
 		7F450A751810C9C50018B7C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7F450A7B1810C9C50018B7C5 /* 4SquareTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 4SquareTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F450A7C1810C9C50018B7C5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -85,6 +88,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F32F9291810CECB00B7FF5B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F32F92A1810CECB00B7FF5B /* Demo4squareViewController.h */,
+				7F32F92B1810CECB00B7FF5B /* Demo4squareViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7F32F92D1810CEF500B7FF5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F32F92E1810CF1300B7FF5B /* Demo4SquareCell.h */,
+				7F32F92F1810CF1300B7FF5B /* Demo4SquareCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7F450A511810C9C50018B7C5 = {
 			isa = PBXGroup;
 			children = (
@@ -121,11 +142,11 @@
 		7F450A631810C9C50018B7C5 /* 4SquareTests */ = {
 			isa = PBXGroup;
 			children = (
+				7F32F92D1810CEF500B7FF5B /* Views */,
+				7F32F9291810CECB00B7FF5B /* ViewControllers */,
 				7F450A6C1810C9C50018B7C5 /* Demo4squareAppDelegate.h */,
 				7F450A6D1810C9C50018B7C5 /* Demo4squareAppDelegate.m */,
 				7F450A6F1810C9C50018B7C5 /* Main.storyboard */,
-				7F450A721810C9C50018B7C5 /* Demo4squareViewController.h */,
-				7F450A731810C9C50018B7C5 /* Demo4squareViewController.m */,
 				7F450A751810C9C50018B7C5 /* Images.xcassets */,
 				7F450A641810C9C50018B7C5 /* Supporting Files */,
 			);
@@ -296,8 +317,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F450A6A1810C9C50018B7C5 /* main.m in Sources */,
-				7F450A741810C9C50018B7C5 /* Demo4squareViewController.m in Sources */,
 				7F450A6E1810C9C50018B7C5 /* Demo4squareAppDelegate.m in Sources */,
+				7F32F9301810CF1300B7FF5B /* Demo4SquareCell.m in Sources */,
+				7F32F92C1810CECB00B7FF5B /* Demo4squareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
