@@ -10,6 +10,7 @@
 		5C599D4948124B2788D5FBFA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3126D61BBA4E4F0CA49B14CE /* libPods.a */; };
 		7F32F92C1810CECB00B7FF5B /* Demo4squareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32F92B1810CECB00B7FF5B /* Demo4squareViewController.m */; };
 		7F32F9301810CF1300B7FF5B /* Demo4SquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32F92F1810CF1300B7FF5B /* Demo4SquareCell.m */; };
+		7F32F9341810CF7300B7FF5B /* Demo4Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32F9331810CF7300B7FF5B /* Demo4Square.m */; };
 		7F450A5E1810C9C50018B7C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F450A5D1810C9C50018B7C5 /* Foundation.framework */; };
 		7F450A601810C9C50018B7C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F450A5F1810C9C50018B7C5 /* CoreGraphics.framework */; };
 		7F450A621810C9C50018B7C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F450A611810C9C50018B7C5 /* UIKit.framework */; };
@@ -43,6 +44,9 @@
 		7F32F92B1810CECB00B7FF5B /* Demo4squareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4squareViewController.m; sourceTree = "<group>"; };
 		7F32F92E1810CF1300B7FF5B /* Demo4SquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4SquareCell.h; sourceTree = "<group>"; };
 		7F32F92F1810CF1300B7FF5B /* Demo4SquareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4SquareCell.m; sourceTree = "<group>"; };
+		7F32F9321810CF7300B7FF5B /* Demo4Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4Square.h; sourceTree = "<group>"; };
+		7F32F9331810CF7300B7FF5B /* Demo4Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4Square.m; sourceTree = "<group>"; };
+		7F32F9381810D05200B7FF5B /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		7F450A5A1810C9C50018B7C5 /* 4SquareTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 4SquareTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F450A5D1810C9C50018B7C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7F450A5F1810C9C50018B7C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,6 +110,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		7F32F9311810CF5D00B7FF5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F32F9321810CF7300B7FF5B /* Demo4Square.h */,
+				7F32F9331810CF7300B7FF5B /* Demo4Square.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7F450A511810C9C50018B7C5 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +155,7 @@
 		7F450A631810C9C50018B7C5 /* 4SquareTests */ = {
 			isa = PBXGroup;
 			children = (
+				7F32F9311810CF5D00B7FF5B /* Model */,
 				7F32F92D1810CEF500B7FF5B /* Views */,
 				7F32F9291810CECB00B7FF5B /* ViewControllers */,
 				7F450A6C1810C9C50018B7C5 /* Demo4squareAppDelegate.h */,
@@ -149,6 +163,7 @@
 				7F450A6F1810C9C50018B7C5 /* Main.storyboard */,
 				7F450A751810C9C50018B7C5 /* Images.xcassets */,
 				7F450A641810C9C50018B7C5 /* Supporting Files */,
+				7F32F9381810D05200B7FF5B /* Global.h */,
 			);
 			path = 4SquareTests;
 			sourceTree = "<group>";
@@ -318,6 +333,7 @@
 			files = (
 				7F450A6A1810C9C50018B7C5 /* main.m in Sources */,
 				7F450A6E1810C9C50018B7C5 /* Demo4squareAppDelegate.m in Sources */,
+				7F32F9341810CF7300B7FF5B /* Demo4Square.m in Sources */,
 				7F32F9301810CF1300B7FF5B /* Demo4SquareCell.m in Sources */,
 				7F32F92C1810CECB00B7FF5B /* Demo4squareViewController.m in Sources */,
 			);
