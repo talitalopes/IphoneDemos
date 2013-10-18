@@ -17,6 +17,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [self loadSpecials];
+    });
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -24,6 +30,34 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)loadSpecials {
+    NSString *dateString = [self dateForURL];
+    
+    NSString *url = [NSString stringWithFormat:K_FOURSQUARE_SEARCH_SPECIALS, K_FOURSQUARE_CLIENT_ID, K_FOURSQUARE_CLIENT_SECRET, dateString];
+
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"%@", operation.responseString);
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Failed");
+        
+    }];
+    
+    [operation start];
+}
+
+- (NSString *)dateForURL {
+    NSDate *date = [NSDate date];
+    
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc]init];
+    [dateFormat setDateFormat:@"YYYYMMdd"];
+    
+    return [dateFormat stringFromDate:date];
 }
 
 @end
