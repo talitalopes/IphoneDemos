@@ -57,6 +57,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="name" destination="rWf-Oo-v9F" id="dlq-tF-zKb"/>
                                             <segue destination="yhH-5m-nEU" kind="push" id="Mza-md-imO"/>
                                         </connections>
                                     </tableViewCell>

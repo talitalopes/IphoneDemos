@@ -97,8 +97,8 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     FoursquareSpecial *special = [self.specials objectAtIndex:[indexPath row]];
-    UILabel *nameLabel = (UILabel *) [self.view viewWithTag:101];
-    nameLabel.text = special.title;
+    Demo4SquareCell *democell = (Demo4SquareCell *)cell;
+    democell.name.text = special.title;
 }
 
 @end

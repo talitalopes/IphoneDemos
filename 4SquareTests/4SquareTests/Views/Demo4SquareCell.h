@@ -10,6 +10,6 @@
 
 @interface Demo4SquareCell : UITableViewCell
 
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) IBOutlet UILabel *name;
 
 @end
