@@ -15,6 +15,7 @@
 		7F32F9411810DA8700B7FF5B /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32F9401810DA8700B7FF5B /* Contact.m */; };
 		7F32F9441810DB0100B7FF5B /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32F9431810DB0100B7FF5B /* Location.m */; };
 		7F32F9471810DBA800B7FF5B /* SpecialCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32F9461810DBA800B7FF5B /* SpecialCategory.m */; };
+		7F32F94A1814268F00B7FF5B /* SpecialDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32F9491814268F00B7FF5B /* SpecialDetailsViewController.m */; };
 		7F450A5E1810C9C50018B7C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F450A5D1810C9C50018B7C5 /* Foundation.framework */; };
 		7F450A601810C9C50018B7C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F450A5F1810C9C50018B7C5 /* CoreGraphics.framework */; };
 		7F450A621810C9C50018B7C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F450A611810C9C50018B7C5 /* UIKit.framework */; };
@@ -59,6 +60,8 @@
 		7F32F9431810DB0100B7FF5B /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		7F32F9451810DBA800B7FF5B /* SpecialCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialCategory.h; sourceTree = "<group>"; };
 		7F32F9461810DBA800B7FF5B /* SpecialCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialCategory.m; sourceTree = "<group>"; };
+		7F32F9481814268F00B7FF5B /* SpecialDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialDetailsViewController.h; sourceTree = "<group>"; };
+		7F32F9491814268F00B7FF5B /* SpecialDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialDetailsViewController.m; sourceTree = "<group>"; };
 		7F450A5A1810C9C50018B7C5 /* 4SquareTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 4SquareTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F450A5D1810C9C50018B7C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7F450A5F1810C9C50018B7C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,6 +112,8 @@
 			children = (
 				7F32F92A1810CECB00B7FF5B /* Demo4squareViewController.h */,
 				7F32F92B1810CECB00B7FF5B /* Demo4squareViewController.m */,
+				7F32F9481814268F00B7FF5B /* SpecialDetailsViewController.h */,
+				7F32F9491814268F00B7FF5B /* SpecialDetailsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -358,6 +363,7 @@
 				7F32F93E1810DA6300B7FF5B /* Venue.m in Sources */,
 				7F32F9411810DA8700B7FF5B /* Contact.m in Sources */,
 				7F32F92C1810CECB00B7FF5B /* Demo4squareViewController.m in Sources */,
+				7F32F94A1814268F00B7FF5B /* SpecialDetailsViewController.m in Sources */,
 				7F32F9441810DB0100B7FF5B /* Location.m in Sources */,
 				7F32F93B1810D95F00B7FF5B /* FoursquareSpecial.m in Sources */,
 			);
