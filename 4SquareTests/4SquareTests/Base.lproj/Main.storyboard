@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="-425" y="-76"/>
         </scene>
-        <!--View Controller - Special-->
+        <!--Special Details View Controller - Special-->
         <scene sceneID="FUw-3p-h1L">
             <objects>
-                <viewController id="yhH-5m-nEU" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SpecialDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yhH-5m-nEU" customClass="SpecialDetailsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TPn-Mi-Aoy"/>
                         <viewControllerLayoutGuide type="bottom" id="rvo-Wc-9Ig"/>
