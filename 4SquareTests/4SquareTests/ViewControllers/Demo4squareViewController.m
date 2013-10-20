@@ -24,8 +24,7 @@
     dispatch_after(popTime, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [self loadSpecials];
     });
-    
-}
+ }
 
 - (void)didReceiveMemoryWarning
 {
@@ -72,7 +71,6 @@
     return [dateFormat stringFromDate:date];
 }
 
-
 #pragma ###################################################################################################################
 #pragma mark - UITableViewDataSource
 
@@ -108,5 +106,19 @@
     
     democell.name.text = special.title;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:NO];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    
+    SpecialDetailsViewController *specialVC = [storyboard instantiateViewControllerWithIdentifier:@"SpecialDetailsViewController"];
+    NSLog(@"%@", specialVC);
+    
+    specialVC.special = [self.specials objectAtIndex:[indexPath row]];
+    [self.navigationController pushViewController:specialVC animated:YES];
+}
+
 
 @end

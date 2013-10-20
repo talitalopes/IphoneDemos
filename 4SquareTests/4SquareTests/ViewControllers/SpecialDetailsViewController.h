@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FoursquareSpecial.h"
 
 @interface SpecialDetailsViewController : UIViewController
+
+@property (nonatomic, strong) FoursquareSpecial *special;
+
+@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 @end

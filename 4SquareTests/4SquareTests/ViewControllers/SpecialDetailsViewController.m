@@ -26,8 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
     
+    self.descriptionLabel.text = self.special.description;
+    self.addressLabel.text = [self.special address];
+    self.navigationItem.title = self.special.title;
 }
 
 - (void)didReceiveMemoryWarning

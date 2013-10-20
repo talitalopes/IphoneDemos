@@ -11,6 +11,7 @@
 #import "Global.h"
 #import "FoursquareSpecial.h"
 #import "Demo4SquareCell.h"
+#import "SpecialDetailsViewController.h"
 
 @interface Demo4squareViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 

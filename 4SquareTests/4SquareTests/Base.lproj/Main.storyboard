@@ -61,7 +61,6 @@
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="name" destination="rWf-Oo-v9F" id="dlq-tF-zKb"/>
-                                            <segue destination="yhH-5m-nEU" kind="push" id="Mza-md-imO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -100,9 +99,36 @@
                     <view key="view" contentMode="scaleToFill" id="5ay-hZ-gyZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Address" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="AwV-0W-q2u">
+                                <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="xa3-XS-Vxa">
+                                <rect key="frame" x="20" y="61" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xa3-XS-Vxa" firstAttribute="leading" secondItem="5ay-hZ-gyZ" secondAttribute="leading" constant="20" id="4CJ-iq-82c"/>
+                            <constraint firstAttribute="trailing" secondItem="xa3-XS-Vxa" secondAttribute="trailing" constant="20" id="WlY-Wm-1PX"/>
+                            <constraint firstAttribute="trailing" secondItem="AwV-0W-q2u" secondAttribute="trailing" constant="20" id="cSy-vE-Cll"/>
+                            <constraint firstItem="xa3-XS-Vxa" firstAttribute="top" secondItem="AwV-0W-q2u" secondAttribute="bottom" constant="20" id="plH-53-O8H"/>
+                            <constraint firstItem="AwV-0W-q2u" firstAttribute="top" secondItem="TPn-Mi-Aoy" secondAttribute="bottom" constant="20" id="qVh-HT-qNK"/>
+                            <constraint firstItem="AwV-0W-q2u" firstAttribute="leading" secondItem="5ay-hZ-gyZ" secondAttribute="leading" constant="20" id="z0B-hY-WWX"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Special" id="r4E-Ka-R3i"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="AwV-0W-q2u" id="FkK-Xb-qaj"/>
+                        <outlet property="descriptionLabel" destination="xa3-XS-Vxa" id="bcK-bl-eWd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mqy-2d-k0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
