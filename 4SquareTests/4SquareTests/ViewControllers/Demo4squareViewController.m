@@ -87,10 +87,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *cellIdentifier = @"CellSpecial";
     
-    Demo4SquareCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    Demo4SquareCell *cell = (Demo4SquareCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!cell) {
         cell = [[Demo4SquareCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
+    
+    // Bugfix on scrolling
+    cell = (Demo4SquareCell *) [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     return cell;
 }
@@ -98,6 +101,11 @@
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     FoursquareSpecial *special = [self.specials objectAtIndex:[indexPath row]];
     Demo4SquareCell *democell = (Demo4SquareCell *)cell;
+    
+    if ([indexPath row] % 2 == 1) {
+        democell.backgroundColor = [UIColor whiteColor];
+    }
+    
     democell.name.text = special.title;
 }
 

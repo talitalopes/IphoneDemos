@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Demo4squareViewController.h"
 
 @interface Demo4squareAppDelegate : UIResponder <UIApplicationDelegate>
 

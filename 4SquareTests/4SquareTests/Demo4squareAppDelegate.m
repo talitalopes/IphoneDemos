@@ -12,6 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self configureNavBar];
     // Override point for customization after application launch.
     return YES;
 }
@@ -41,6 +42,20 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void) configureNavBar {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    UINavigationController *mainNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"MainNavigationController"];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    mainNavigationController.navigationBar.barTintColor = [UIColor colorWithRed:62.0/255.0 green:151.0/255.0 blue:200.0/255.0 alpha:0.5];
+    mainNavigationController.navigationBar.tintColor = [UIColor whiteColor];
+    mainNavigationController.navigationBar.translucent = YES;
+    
+    self.window.rootViewController = mainNavigationController;
 }
 
 @end

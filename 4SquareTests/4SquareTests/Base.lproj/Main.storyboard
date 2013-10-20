@@ -7,7 +7,7 @@
         <!--Navigation Controller-->
         <scene sceneID="WC2-uH-zn1">
             <objects>
-                <navigationController definesPresentationContext="YES" id="FtU-3p-0UT" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainNavigationController" definesPresentationContext="YES" id="FtU-3p-0UT" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KlK-Uy-NH1">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -22,7 +22,7 @@
         <!--Demo 4square View Controller - Specials-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="Demo4squareViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Demo4squareViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="Demo4squareViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="abC-Sq-dB9"/>
                         <viewControllerLayoutGuide type="bottom" id="lzj-0w-dVB"/>
@@ -31,22 +31,23 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qa1-Rg-gof">
-                                <rect key="frame" x="0.0" y="20" width="320" height="484"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qa1-Rg-gof">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="CellSpecial" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CellSpecial" rowHeight="70" id="rLC-sW-SDN" customClass="Demo4SquareCell">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="CellSpecial" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CellSpecial" rowHeight="70" id="rLC-sW-SDN" customClass="Demo4SquareCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rLC-sW-SDN" id="znZ-fF-uB3">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="rWf-Oo-v9F">
                                                     <rect key="frame" x="20" y="24" width="280" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -56,6 +57,8 @@
                                                 <constraint firstItem="rWf-Oo-v9F" firstAttribute="centerY" secondItem="znZ-fF-uB3" secondAttribute="centerY" id="f9X-jF-joa"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.88793933391571045" green="0.93276256322860718" blue="0.9997096061706543" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="name" destination="rWf-Oo-v9F" id="dlq-tF-zKb"/>
                                             <segue destination="yhH-5m-nEU" kind="push" id="Mza-md-imO"/>
