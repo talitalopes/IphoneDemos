@@ -117,13 +117,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Address" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="AwV-0W-q2u">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="AwV-0W-q2u">
                                 <rect key="frame" x="20" y="20" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="xa3-XS-Vxa">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="xa3-XS-Vxa">
                                 <rect key="frame" x="20" y="61" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -136,7 +136,7 @@
                             <constraint firstAttribute="trailing" secondItem="xa3-XS-Vxa" secondAttribute="trailing" constant="20" id="WlY-Wm-1PX"/>
                             <constraint firstAttribute="trailing" secondItem="AwV-0W-q2u" secondAttribute="trailing" constant="20" id="cSy-vE-Cll"/>
                             <constraint firstItem="xa3-XS-Vxa" firstAttribute="top" secondItem="AwV-0W-q2u" secondAttribute="bottom" constant="20" id="plH-53-O8H"/>
-                            <constraint firstItem="AwV-0W-q2u" firstAttribute="top" secondItem="TPn-Mi-Aoy" secondAttribute="bottom" constant="20" id="qVh-HT-qNK"/>
+                            <constraint firstItem="AwV-0W-q2u" firstAttribute="top" secondItem="TPn-Mi-Aoy" secondAttribute="bottom" id="qVh-HT-qNK"/>
                             <constraint firstItem="AwV-0W-q2u" firstAttribute="leading" secondItem="5ay-hZ-gyZ" secondAttribute="leading" constant="20" id="z0B-hY-WWX"/>
                         </constraints>
                     </view>
