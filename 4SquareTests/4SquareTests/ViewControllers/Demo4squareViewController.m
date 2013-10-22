@@ -108,6 +108,7 @@
     }
     
     democell.name.text = special.title;
+    democell.address.text = [special address];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
