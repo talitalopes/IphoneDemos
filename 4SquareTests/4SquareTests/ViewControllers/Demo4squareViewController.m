@@ -20,10 +20,7 @@
 
     self.specials = [[NSMutableArray alloc] init];
     
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [self loadSpecials];
-    });
+    [self startSignificantChangeUpdates];
  }
 
 - (void)didReceiveMemoryWarning
@@ -35,8 +32,14 @@
 - (void)loadSpecials {
     NSString *dateString = [self dateForURL];
     
-    NSString *url = [NSString stringWithFormat:K_FOURSQUARE_SEARCH_SPECIALS, K_FOURSQUARE_CLIENT_ID, K_FOURSQUARE_CLIENT_SECRET, dateString];
-
+    NSString *latitude = [NSString stringWithFormat:@"%f", self.coords.latitude];
+    NSString *longitude = [NSString stringWithFormat:@"%f", self.coords.longitude];
+    
+    NSString *url = [NSString stringWithFormat:K_FOURSQUARE_SEARCH_SPECIALS, latitude, longitude, K_FOURSQUARE_CLIENT_ID, K_FOURSQUARE_CLIENT_SECRET, dateString];
+    if (![CLLocationManager locationServicesEnabled]) {
+        url = [NSString stringWithFormat:K_FOURSQUARE_SEARCH_SPECIALS_DEFAULT, K_FOURSQUARE_CLIENT_ID, K_FOURSQUARE_CLIENT_SECRET, dateString];
+    }
+    
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
 
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
@@ -120,5 +123,54 @@
     [self.navigationController pushViewController:specialVC animated:YES];
 }
 
+- (void)startSignificantChangeUpdates
+{
+    if ([CLLocationManager locationServicesEnabled])
+    {
+        if (!self.locationManager)
+            self.locationManager = [[CLLocationManager alloc] init];
+        
+        self.locationManager.delegate = self;
+        [self.locationManager startMonitoringSignificantLocationChanges];
+
+    } else {
+        [self triggerLoadSpecials];
+    }
+}
+
+- (void)stopSignificantChangesUpdates
+{
+    [self.locationManager stopUpdatingLocation];
+    self.locationManager = nil;
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    CLLocation *location = [locations lastObject];
+    
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    
+    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
+        CLPlacemark *placemark = placemarks[0];
+        NSDictionary *addressDictionary = [placemark addressDictionary];
+        NSString *city = addressDictionary[(NSString *)kABPersonAddressCityKey];
+        NSString *state = addressDictionary[(NSString *)kABPersonAddressStateKey];
+        NSString *country = placemark.country;
+        
+        self.coords = placemark.location.coordinate;
+        
+        NSLog(@"%@", [NSString stringWithFormat:@"%@, %@, %@", city, state, country]);
+        [self triggerLoadSpecials];
+    }];
+    
+    [self stopSignificantChangesUpdates];
+}
+
+-(void)triggerLoadSpecials {
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [self loadSpecials];
+    });
+}
 
 @end
