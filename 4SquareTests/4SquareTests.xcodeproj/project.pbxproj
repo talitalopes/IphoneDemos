@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C599D4948124B2788D5FBFA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3126D61BBA4E4F0CA49B14CE /* libPods.a */; };
+		7F2CE9BA1821F814009D5801 /* DemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2CE9B91821F814009D5801 /* DemoTableViewController.m */; };
 		7F32F92C1810CECB00B7FF5B /* Demo4squareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32F92B1810CECB00B7FF5B /* Demo4squareViewController.m */; };
 		7F32F9301810CF1300B7FF5B /* Demo4SquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32F92F1810CF1300B7FF5B /* Demo4SquareCell.m */; };
 		7F32F93B1810D95F00B7FF5B /* FoursquareSpecial.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32F93A1810D95F00B7FF5B /* FoursquareSpecial.m */; };
@@ -45,6 +46,8 @@
 /* Begin PBXFileReference section */
 		2979505A36924805B311833D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		3126D61BBA4E4F0CA49B14CE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2CE9B81821F814009D5801 /* DemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewController.h; sourceTree = "<group>"; };
+		7F2CE9B91821F814009D5801 /* DemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewController.m; sourceTree = "<group>"; };
 		7F32F92A1810CECB00B7FF5B /* Demo4squareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4squareViewController.h; sourceTree = "<group>"; };
 		7F32F92B1810CECB00B7FF5B /* Demo4squareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4squareViewController.m; sourceTree = "<group>"; };
 		7F32F92E1810CF1300B7FF5B /* Demo4SquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4SquareCell.h; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				7F32F92B1810CECB00B7FF5B /* Demo4squareViewController.m */,
 				7F32F9481814268F00B7FF5B /* SpecialDetailsViewController.h */,
 				7F32F9491814268F00B7FF5B /* SpecialDetailsViewController.m */,
+				7F2CE9B81821F814009D5801 /* DemoTableViewController.h */,
+				7F2CE9B91821F814009D5801 /* DemoTableViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 				7F32F9471810DBA800B7FF5B /* SpecialCategory.m in Sources */,
 				7F450A6E1810C9C50018B7C5 /* Demo4squareAppDelegate.m in Sources */,
 				7F32F9301810CF1300B7FF5B /* Demo4SquareCell.m in Sources */,
+				7F2CE9BA1821F814009D5801 /* DemoTableViewController.m in Sources */,
 				7F32F93E1810DA6300B7FF5B /* Venue.m in Sources */,
 				7F32F9411810DA8700B7FF5B /* Contact.m in Sources */,
 				7F32F92C1810CECB00B7FF5B /* Demo4squareViewController.m in Sources */,

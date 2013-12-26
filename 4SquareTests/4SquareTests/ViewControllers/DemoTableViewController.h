@@ -7,7 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <AddressBook/AddressBook.h>
+#import <UIKit/UIKit.h>
+#import "AFNetworking.h"
+#import "Global.h"
+#import "FoursquareSpecial.h"
+#import "Demo4SquareCell.h"
+#import "SpecialDetailsViewController.h"
 
-@interface DemoTableViewController : UITableViewController
+@interface DemoTableViewController : UITableViewController<CLLocationManagerDelegate>
+
+@property (nonatomic, strong) NSMutableArray *specials;
+@property (nonatomic) int specialsCount;
+
+@property (nonatomic, strong) CLLocationManager *locationManager;
+@property (nonatomic) CLLocationCoordinate2D coords;
 
 @end

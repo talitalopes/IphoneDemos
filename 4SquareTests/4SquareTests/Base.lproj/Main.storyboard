@@ -7,7 +7,7 @@
         <!--Navigation Controller-->
         <scene sceneID="WC2-uH-zn1">
             <objects>
-                <navigationController storyboardIdentifier="MainNavigationController" definesPresentationContext="YES" id="FtU-3p-0UT" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="FtU-3p-0UT" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KlK-Uy-NH1">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="-353" y="-437"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Demo Table View Controller-->
         <scene sceneID="oGb-jn-wrB">
             <objects>
-                <tableViewController id="dBE-UA-RIf" sceneMemberID="viewController">
+                <tableViewController id="dBE-UA-RIf" customClass="DemoTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="kG9-rV-lWm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,10 +165,21 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="BRL-Nd-CjK"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="upV-Eg-0qD">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <attributedString key="attributedTitle">
+                            <fragment content="Carregando...">
+                                <attributes>
+                                    <font key="NSFont" metaFont="toolTip"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O79-WC-g9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="173" y="294"/>
+            <point key="canvasLocation" x="135" y="266"/>
         </scene>
         <!--Special Details View Controller - Special-->
         <scene sceneID="FUw-3p-h1L">
@@ -219,7 +230,7 @@
         <!--Navigation Controller-->
         <scene sceneID="EXd-HS-hjZ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hyp-We-gxi" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Hyp-We-gxi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="egV-qn-9fo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -232,7 +243,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pcv-1K-zHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-353" y="294"/>
+            <point key="canvasLocation" x="-353" y="266"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
